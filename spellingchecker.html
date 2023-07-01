@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Spelling Checker</title>
+  
+  <link rel="stylesheet" type="text/css" href="spellingchecker.css">
+</head>
+
+<body>
+  <nav>
+    <div class="main-nav container flex">
+      <a href="#" onclick="reload()" class="company-logo">
+        <img src="open-book.png" alt="Dictionary-Logo">
+      </a>
+
+      <div class="nav-link">
+        <ul class="flex">
+          <li class="hover-link nav-item" id="Home" onclick="reload()">Home</li>
+
+          <li class="hover-link nav-item" id="Contact">
+            <a href="contact.html" target="_blank"> Contact</a>
+          </li>
+          <li class="hover-link nav-item" id="About">
+            <a href="about.html" target="_blank">About</a>
+          </li>
+
+          <!-- </li> -->
+        </ul>
+      </div>
+    </div>
+    <h1>Word Dictionary</h1>
+    <form id="spellcheck-form">
+      <label for="word"></label>
+      <input type="text" id="word" name="word" placeholder="Type a word..." class="search-part">
+      <button class="search-button" type="button" id="check-btn">Search</button>
+    </form>
+    <div id="result"></div>
+
+    <footer>
+      <div class="foot-1">
+        Go to Top
+      </div>
+      <div class="foot-2 flex ">
+        <ul class="flex">
+          <li> Made by KK &#169</li>
+          <li></li>
+          <li>All Right Reserved &#174 </li>
+
+        </ul>
+      </div>
+    </footer>
+
+    <script src="spellingchecker.js"></script>
+</body>
+
+</html>
